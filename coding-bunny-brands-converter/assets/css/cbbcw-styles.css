@@ -1,0 +1,118 @@
+/* ===== ROOT VARIABLES ===== */
+:root {
+	--cb-white: #ffffff;
+	--cb-black: #2b3337;
+	--cb-yellow: #e6bb45;
+	--cb-yellow-soft: #fbf3dc;
+	--cb-light-blue: #11a9d8;
+	--cb-big-title: 23px;
+	--cb-text: 13px;
+	--cb-small-text: 12px;
+	--cb-bold-text: 600;
+}
+
+/* ===== CONTAINER ===== */
+.wrap {
+	flex: 1;
+	min-width: 0;
+}
+
+.cbbcw-header {
+	position: relative;
+    padding: 10px 30px;
+    background: var(--cb-black);
+	display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.cbbcw-header-left {
+	display:flex;
+	align-items:center;
+	gap:12px;
+	flex:0 1 auto;
+}
+
+.cbbcw-header p {
+	font-size: var(--cb-big-title);
+	color: var(--cb-white);
+	margin: 0;
+}
+
+.cbbcw-header span {
+	font-size: var(--cb-small-text);
+}
+.cbbcw-logo {
+	width:48px;
+}
+
+.cbbcw-version {
+	font-size: var(--cb-small-text);
+	color: var(--cb-light-blue);
+}
+
+.cbbcw-header h3 {
+	font-size: var(--cb-small-title);
+	margin: 0 0 15px 0;
+}
+
+.cbbcw-doc-block {
+	color: var(--cb-white);
+	display: flex;
+    padding: 12px;
+    border: 1px solid var(--cb-light-blue);
+    border-radius: 3px;
+}
+
+.cbbcw-doc-text a {
+	color: var(--cb-light-blue);
+}
+
+.cbbcw-section {
+	background-color: var(--cb-white);
+	padding: 24px;
+	flex: 1 1 40%;
+	box-sizing: border-box;
+}
+
+/* ===== MESSAGE STYLES ===== */
+.cbbcw-warning {
+	margin: 10px 0;
+	padding: 20px;
+	font-weight: var(--cb-bold-text);
+	border-left: 4px solid var(--cb-yellow);
+	background: var(--cb-yellow-soft);
+}
+
+/* ===== TABLE STYLES ===== */
+.cbbcw-terms-table,
+.cbbcw-terms-table tr {
+    margin-top: 10px;
+    border-collapse: collapse;
+    border: 1px solid var(--cb-black);
+}
+
+.cbbcw-terms-table th,
+.cbbcw-terms-table td {
+    padding: 6px 12px;
+}
+
+.cbbcw-terms-table th {
+    background: var(--cb-black);
+	color: var(--cb-white);
+	text-align: left;
+}
+
+/* ===== BUTTONS STYLES ===== */
+.wp-core-ui .button-primary {
+	background: var(--cb-black)!important;
+	color: var(--cb-white)!important;
+	border: 1 solid var(--cb-black)!important;
+}
+
+.wp-core-ui .button-primary:hover {
+	opacity: 0.6;
+}
